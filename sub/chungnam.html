@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
-    <title>환황해포럼</title>
+    <title>환황해포럼 충남관광명소</title>
     <link rel="shortcut icon" href="/source/img/favicon.ico">
 
     <link rel="stylesheet" href="/source/plugin/slick/slick.css">
@@ -23,8 +23,8 @@
       <div class="wrapper">
         <div class="hd-wrap">
           <h1 class="logo">
-            <a href="">
-              <img src="/source/img/logo.png" alt="환황해포럼 로고">
+            <a href="" title="홈으로 이동">
+              <img src="/source/img/logo.png" alt="제 9회 환황해포럼 로고">
             </a>
           </h1>
           <div class="gnb">
@@ -75,12 +75,12 @@
           </div>
           <div class="hd-right-menu">
             <div class="hd-right-menu-item">
-              <button class="lang-btn">
-                <span><img src="/source/img/icon-lang.png" alt="언어 변경"></span>
+              <button class="lang-btn" title="언어 변경" onclick="javascript:alert('준비중입니다.')">
+                <span><img src="/source/img/icon-lang.png" alt="언어"></span>
                 <span>KR</span>
               </button>
             </div>
-            <button class="all-menu">
+            <button class="all-menu" title="전체 메뉴">
               <span></span>
               <span></span>
               <span></span>
@@ -88,11 +88,11 @@
           </div>
         </div>
       </div>
-      <div class="full-menu">
+      <div class="full-menu pc">
         <div class="full-menu-wrap">
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">행사소개</a>
+              <p class="full-menu-title">행사소개</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">포럼소개</a>
@@ -116,7 +116,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">참가자안내</a>
+              <p class="full-menu-title">참가자안내</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">등록신청</a>
@@ -132,7 +132,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">자료실</a>
+              <p class="full-menu-title">자료실</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">이전 포럼</a>
@@ -145,7 +145,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">커뮤니티</a>
+              <p class="full-menu-title">커뮤니티</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">공지사항</a>
@@ -165,29 +165,29 @@
     <div class="fix-menu">
       <ul class="fix-menu-ul">
         <li>
-          <a href="">
-            <img src="/source/img/icon-online-write.png" alt="온라인등록">
+          <a href="" title="온라인등록">
+            <img src="/source/img/icon-online-write.png" alt="작성 아이콘">
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="/source/img/icon-notice.png" alt="공지사항">
+          <a href="" title="공지사항">
+            <img src="/source/img/icon-notice.png" alt="공지 아이콘">
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="/source/img/icon-program.png" alt="프로그램">
+          <a href="" title="프로그램">
+            <img src="/source/img/icon-program.png" alt="프로그램 아이콘">
           </a>
         </li>
       </ul>
-      <button class="top-btn">
-        <p><img src="/source/img/icon-top-btn.png" alt="상단으로 이동하기"></p>
+      <button class="top-btn" title="상단으로 이동">
+        <p><img src="/source/img/icon-top-btn.png" alt="상단 화살표 아이콘"></p>
         <p>TOP</p>
       </button>
     </div>
     <!-- } Fix Menu -->
 
-    <!-- Sub Content { -->
+    <!-- Sub { -->
     <div class="sub">
       <div class="sub_top">
         <div class="txt_box">
@@ -196,154 +196,158 @@
         </div>
       </div>
 
-      <div id="chungnam" class="sub_contents">
-        <div class="wrapper">
-          <div class="chungnam-wrap">
-            <div class="chungnam-content01">
-              <div class="sub-section-title-box">
-                <p class="title">충남관광포털 바로가기</p>
-                <button type="button" onclick="printPage()" class="print-btn">
-                  <img src="/source/img/print-white.png" alt="프린트하기">
-                  PRINT
-                </button>
+      <div class="chungnam">
+        <!-- Sub Contents { -->
+        <div class="sub_contents">
+          <div class="wrapper">
+            <div class="chungnam-wrap">
+              <div class="chungnam-content01">
+                <div class="sub-section-title-box">
+                  <p class="title">충남관광포털 바로가기</p>
+                  <button type="button" onclick="printPage()" class="print-btn">
+                    <img src="/source/img/print-white.png" alt="프린트하기">
+                    PRINT
+                  </button>
+                </div>
+                <a href="https://tour.chungnam.go.kr/html/kr/" target="_blank" title="충남관광포털 새창으로 열림" class="chungnam-link">
+                  <img src="/source/img/icon-chungnam.jpg" alt="충남여행 심볼">
+                  <p>“넉넉해진 나자신 느낌여행 충남” 바로가기</p>
+                </a>
               </div>
-              <a href="https://tour.chungnam.go.kr/html/kr/" target="_blank" title="충남관광포털 새창으로 열림" class="chungnam-link">
-                <img src="/source/img/icon-chungnam.jpg" alt="충남여행 심볼">
-                <p>“넉넉해진 나자신 느낌여행 충남” 바로가기</p>
-              </a>
-            </div>
-            <div class="chungnam-content02">
-              <div class="sub-section-title-box">
-                <p class="title">관광서비스 안내 바로가기</p>
-              </div>
-              <div class="shortcut-list">
-                <div class="shortcut-item">
-                  <a href="https://www.cheonan.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img01.png" alt="천안">
-                    </div>
-                    <p class="shortcut-text">천안</p>
-                  </a>
+              <div class="chungnam-content02">
+                <div class="sub-section-title-box">
+                  <p class="title">관광서비스 안내 바로가기</p>
                 </div>
-                <div class="shortcut-item">
-                  <a href="https://tour.gongju.go.kr/tour/index.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img02.png" alt="공주">
-                    </div>
-                    <p class="shortcut-text">공주</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.brcn.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img03.png" alt="보령">
-                    </div>
-                    <p class="shortcut-text">보령</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.asan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img04.png" alt="아산">
-                    </div>
-                    <p class="shortcut-text">아산</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.seosan.go.kr/tour/index.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img05.png" alt="서산">
-                    </div>
-                    <p class="shortcut-text">서산</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.nonsan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img06.png" alt="논산">
-                    </div>
-                    <p class="shortcut-text">논산</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://job.gyeryong.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img07.png" alt="계룡">
-                    </div>
-                    <p class="shortcut-text">계룡</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.dangjin.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img08.png" alt="당진">
-                    </div>
-                    <p class="shortcut-text">당진</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.geumsan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img09.png" alt="금산">
-                    </div>
-                    <p class="shortcut-text">금산</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.buyeo.go.kr/html/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img10.png" alt="부여">
-                    </div>
-                    <p class="shortcut-text">부여</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="http://www.seocheon.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img11.png" alt="서천">
-                    </div>
-                    <p class="shortcut-text">서천</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.cheongyang.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img12.png" alt="청양">
-                    </div>
-                    <p class="shortcut-text">청양</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="https://www.hongseong.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img13.png" alt="홍성">
-                    </div>
-                    <p class="shortcut-text">홍성</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="http://www.yesan.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img14.png" alt="예산">
-                    </div>
-                    <p class="shortcut-text">예산</p>
-                  </a>
-                </div>
-                <div class="shortcut-item">
-                  <a href="http://taean.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
-                    <div class="shortcut-img">
-                      <img src="/source/img/shortcut-img15.png" alt="태안">
-                    </div>
-                    <p class="shortcut-text">태안</p>
-                  </a>
+                <div class="shortcut-list">
+                  <div class="shortcut-item">
+                    <a href="https://www.cheonan.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img01.png" alt="천안">
+                      </div>
+                      <p class="shortcut-text">천안</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://tour.gongju.go.kr/tour/index.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img02.png" alt="공주">
+                      </div>
+                      <p class="shortcut-text">공주</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.brcn.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img03.png" alt="보령">
+                      </div>
+                      <p class="shortcut-text">보령</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.asan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img04.png" alt="아산">
+                      </div>
+                      <p class="shortcut-text">아산</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.seosan.go.kr/tour/index.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img05.png" alt="서산">
+                      </div>
+                      <p class="shortcut-text">서산</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.nonsan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img06.png" alt="논산">
+                      </div>
+                      <p class="shortcut-text">논산</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://job.gyeryong.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img07.png" alt="계룡">
+                      </div>
+                      <p class="shortcut-text">계룡</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.dangjin.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img08.png" alt="당진">
+                      </div>
+                      <p class="shortcut-text">당진</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.geumsan.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img09.png" alt="금산">
+                      </div>
+                      <p class="shortcut-text">금산</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.buyeo.go.kr/html/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img10.png" alt="부여">
+                      </div>
+                      <p class="shortcut-text">부여</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="http://www.seocheon.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img11.png" alt="서천">
+                      </div>
+                      <p class="shortcut-text">서천</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.cheongyang.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img12.png" alt="청양">
+                      </div>
+                      <p class="shortcut-text">청양</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="https://www.hongseong.go.kr/tour/" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img13.png" alt="홍성">
+                      </div>
+                      <p class="shortcut-text">홍성</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="http://www.yesan.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img14.png" alt="예산">
+                      </div>
+                      <p class="shortcut-text">예산</p>
+                    </a>
+                  </div>
+                  <div class="shortcut-item">
+                    <a href="http://taean.go.kr/tour.do" class="shortcut-link" target="_blank" title="홈페이지 새창으로 열림">
+                      <div class="shortcut-img">
+                        <img src="/source/img/shortcut-img15.png" alt="태안">
+                      </div>
+                      <p class="shortcut-text">태안</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- } Sub Contents -->
       </div>
     </div>
-    <!-- } Sub Content -->
+    <!-- } Sub -->
 
     <!-- Footer { -->
     <div class="footer">
@@ -354,7 +358,9 @@
               <p class="ft-host-title">주최</p>
               <ul class="i-col-0 ft-host-ul">
                 <li>
-                  <a href=""><img src="/source/img/ft-host01.png" alt="충청남도"></a>
+                  <a href="http://www.chungnam.go.kr/main.do" target="_blank" title="충청남도 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host01.png" alt="충청남도">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -362,7 +368,9 @@
               <p class="ft-host-title">주관</p>
               <ul class="i-col-0 ft-host-ul">
                 <li>
-                  <a href=""><img src="/source/img/ft-host02.png" alt="(주)포렉스컴"></a>
+                  <a href="http://forexcom.kr/main.php" target="_blank" title="(주)포렉스컴 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host02.png" alt="(주)포렉스컴">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -370,13 +378,19 @@
               <p class="ft-host-title">후원</p>
               <ul class="i-col-0 ft-host-ul">
                 <li>
-                  <a href=""><img src="/source/img/ft-host03.png" alt="문화체육관광부"></a>
+                  <a href="https://www.mcst.go.kr/kor/main.jsp" target="_blank" title="문화체육관광부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host03.png" alt="문화체육관광부">
+                  </a>
                 </li>
                 <li>
-                  <a href=""><img src="/source/img/ft-host04.png" alt="환경부"></a>
+                  <a href="http://me.go.kr/home/web/main.do" target="_blank" title="환경부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host04.png" alt="환경부">
+                  </a>
                 </li>
                 <li>
-                  <a href=""><img src="/source/img/ft-host05.png" alt="해양수산부"></a>
+                  <a href="https://www.mof.go.kr/index.do" target="_blank" title="해양수산부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host05.png" alt="해양수산부">
+                  </a>
                 </li>
               </ul>
             </div>

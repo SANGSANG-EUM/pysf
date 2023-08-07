@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
-    <title>환황해포럼</title>
+    <title>환황해포럼 공지사항</title>
     <link rel="shortcut icon" href="/source/img/favicon.ico">
 
     <link rel="stylesheet" href="/source/plugin/slick/slick.css">
@@ -23,8 +23,8 @@
       <div class="wrapper">
         <div class="hd-wrap">
           <h1 class="logo">
-            <a href="">
-              <img src="/source/img/logo.png" alt="환황해포럼 로고">
+            <a href="" title="홈으로 이동">
+              <img src="/source/img/logo.png" alt="제 9회 환황해포럼 로고">
             </a>
           </h1>
           <div class="gnb">
@@ -75,12 +75,12 @@
           </div>
           <div class="hd-right-menu">
             <div class="hd-right-menu-item">
-              <button class="lang-btn">
-                <span><img src="/source/img/icon-lang.png" alt="언어 변경"></span>
+              <button class="lang-btn" title="언어 변경" onclick="javascript:alert('준비중입니다.')">
+                <span><img src="/source/img/icon-lang.png" alt="언어"></span>
                 <span>KR</span>
               </button>
             </div>
-            <button class="all-menu">
+            <button class="all-menu" title="전체 메뉴">
               <span></span>
               <span></span>
               <span></span>
@@ -88,11 +88,11 @@
           </div>
         </div>
       </div>
-      <div class="full-menu">
+      <div class="full-menu pc">
         <div class="full-menu-wrap">
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">행사소개</a>
+              <p class="full-menu-title">행사소개</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">포럼소개</a>
@@ -116,7 +116,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">참가자안내</a>
+              <p class="full-menu-title">참가자안내</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">등록신청</a>
@@ -132,7 +132,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">자료실</a>
+              <p class="full-menu-title">자료실</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">이전 포럼</a>
@@ -145,7 +145,7 @@
           </div>
           <div class="full-menu-box">
             <div class="full-menu-inner">
-              <a href="" class="full-menu-title">커뮤니티</a>
+              <p class="full-menu-title">커뮤니티</p>
               <ul class="full-menu-list">
                 <li class="full-menu-link">
                   <a href="">공지사항</a>
@@ -165,29 +165,29 @@
     <div class="fix-menu">
       <ul class="fix-menu-ul">
         <li>
-          <a href="">
-            <img src="/source/img/icon-online-write.png" alt="온라인등록">
+          <a href="" title="온라인등록">
+            <img src="/source/img/icon-online-write.png" alt="작성 아이콘">
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="/source/img/icon-notice.png" alt="공지사항">
+          <a href="" title="공지사항">
+            <img src="/source/img/icon-notice.png" alt="공지 아이콘">
           </a>
         </li>
         <li>
-          <a href="">
-            <img src="/source/img/icon-program.png" alt="프로그램">
+          <a href="" title="프로그램">
+            <img src="/source/img/icon-program.png" alt="프로그램 아이콘">
           </a>
         </li>
       </ul>
-      <button class="top-btn">
-        <p><img src="/source/img/icon-top-btn.png" alt="상단으로 이동하기"></p>
+      <button class="top-btn" title="상단으로 이동">
+        <p><img src="/source/img/icon-top-btn.png" alt="상단 화살표 아이콘"></p>
         <p>TOP</p>
       </button>
     </div>
     <!-- } Fix Menu -->
 
-    <!-- Sub Content { -->
+    <!-- Sub { -->
     <div class="sub">
       <div class="sub_top">
         <div class="txt_box">
@@ -196,108 +196,133 @@
         </div>
       </div>
 
-      <div id="bo_view-default" class="sub_contents">
-        <div class="sub_ct_top">
-          <div class="wrapper">
-            <div class="cf sub_ct_top_inner">
-              <button type="button" onclick="printPage()" class="print-btn">
-                <img src="/source/img/print-white.png" alt="프린트하기">
-                PRINT
-              </button>
+      <div class="bo_view-default">
+        <!-- Sub Contents { -->
+        <div class="sub_contents">
+          <div class="sub_ct_top">
+            <div class="wrapper">
+              <div class="cf sub_ct_top_inner">
+                <button type="button" onclick="printPage()" class="print-btn">
+                  <img src="/source/img/print-white.png" alt="프린트하기">
+                  PRINT
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="board_view">
+            <div class="wrapper">
+              <div class="board_v_ct">
+                <!-- 게시글 상단 { -->
+                <div class="bo_v_header">
+                  <p class="bo_v-subj">제8회 환항해포럼 생중계 이벤트</p>
+                  <p class="bo_v-date">2023.00.00</p>
+                </div>
+                <!-- } 게시글 상단 -->
+                <!-- 게시글 첨부파일 { -->
+                <div class="bo_v_attach">
+                  <!-- loop { -->
+                  <a href="" class="bo_v_file">
+                    <img src="/source/img/download-icon.svg" alt="첨부파일 다운로드" class="icon">
+                    <span class="text">attached file.pdf</span>
+                  </a>
+                  <!-- } loop -->
+                  <a href="" class="bo_v_file">
+                    <img src="/source/img/download-icon.svg" alt="첨부파일 다운로드" class="icon">
+                    <span class="text">attached file.pdf</span>
+                  </a>
+                </div>
+                <!-- } 게시글 첨부파일 -->
+                <!-- 게시글 내용 { -->
+                <div class="bo_v_cont">
+                  게시물 내용입니다.
+                </div>
+                <!-- } 게시글 내용 -->
+              </div>
+              <!-- 버튼 영역 { -->
+              <div class="bo_v_bot">
+                <div class="bo_v_link_group">
+                  <a href="" class="bo_v-move prev">이전글</a>
+                  <a href="/sub/board_list.html" class="bo_v-list">목록</a>
+                  <a href="" class="bo_v-move next">다음글</a>
+                </div>
+              </div>
+              <!-- } 버튼 영역 -->
             </div>
           </div>
         </div>
+        <!-- } Sub Contents -->
+      </div>
+    </div>
+    <!-- } Sub -->
 
-        <div class="board_view">
+    <!-- Footer { -->
+    <div class="footer">
+      <div class="ft-wrap">
+        <div class="ft-top">
           <div class="wrapper">
-            <div class="board_v_ct">
-              <div class="bo_v_header">
-                <p class="bo_v-subj">제8회 환항해포럼 생중계 이벤트</p>
-                <p class="bo_v-date">2023.00.00</p>
-              </div>
-              <div class="bo_v_attach">
-                <!-- loop { -->
-                <a href="" class="bo_v_file">
-                  <img src="/source/img/download-icon.svg" alt="첨부파일 다운로드" class="icon">
-                  <span class="text">attached file.pdf</span>
-                </a>
-                <!-- } loop -->
-              </div>
-              <div class="bo_v_cont">
-                게시물 내용입니다.
-              </div>
+            <div class="ft-host-ct">
+              <p class="ft-host-title">주최</p>
+              <ul class="i-col-0 ft-host-ul">
+                <li>
+                  <a href="http://www.chungnam.go.kr/main.do" target="_blank" title="충청남도 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host01.png" alt="충청남도">
+                  </a>
+                </li>
+              </ul>
             </div>
-
-            <div class="bo_v_bot">
-              <div class="bo_v_link_group">
-                <a href="" class="bo_v-move prev">이전글</a>
-                <a href="/sub/board_list.html" class="bo_v-list">목록</a>
-                <a href="" class="bo_v-move next">다음글</a>
+            <div class="ft-host-ct">
+              <p class="ft-host-title">주관</p>
+              <ul class="i-col-0 ft-host-ul">
+                <li>
+                  <a href="http://forexcom.kr/main.php" target="_blank" title="(주)포렉스컴 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host02.png" alt="(주)포렉스컴">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-host-ct">
+              <p class="ft-host-title">후원</p>
+              <ul class="i-col-0 ft-host-ul">
+                <li>
+                  <a href="https://www.mcst.go.kr/kor/main.jsp" target="_blank" title="문화체육관광부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host03.png" alt="문화체육관광부">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://me.go.kr/home/web/main.do" target="_blank" title="환경부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host04.png" alt="환경부">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.mof.go.kr/index.do" target="_blank" title="해양수산부 홈페이지 새창으로 열림">
+                    <img src="/source/img/ft-host05.png" alt="해양수산부">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ft-bot">
+          <div class="wrapper">
+            <div class="ft-bot-ct">
+              <div class="ft-bot-item">
+                <ul class="i-col-0 ft-info-ul">
+                  <li>(02586) 서울시 동대문구 난계로 250 경해빌딩 204호 (주)더오션</li>
+                  <br>
+                  <li>프로그램 및 행사 문의전화 : 070-4900-3100</li>
+                  <li>E-mail : panyellowsea2022@gmail.com</li>
+                </ul>
+              </div>
+              <div class="ft-bot-item">
+                <p class="copyright">Copyright(c)환황해포럼. All rights reserved.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- } Sub Content -->
-
-    <!-- Footer { -->
-      <div class="footer">
-        <div class="ft-wrap">
-          <div class="ft-top">
-            <div class="wrapper">
-              <div class="ft-host-ct">
-                <p class="ft-host-title">주최</p>
-                <ul class="i-col-0 ft-host-ul">
-                  <li>
-                    <a href=""><img src="/source/img/ft-host01.png" alt="충청남도"></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="ft-host-ct">
-                <p class="ft-host-title">주관</p>
-                <ul class="i-col-0 ft-host-ul">
-                  <li>
-                    <a href=""><img src="/source/img/ft-host02.png" alt="(주)포렉스컴"></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="ft-host-ct">
-                <p class="ft-host-title">후원</p>
-                <ul class="i-col-0 ft-host-ul">
-                  <li>
-                    <a href=""><img src="/source/img/ft-host03.png" alt="문화체육관광부"></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="/source/img/ft-host04.png" alt="환경부"></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="/source/img/ft-host05.png" alt="해양수산부"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="ft-bot">
-            <div class="wrapper">
-              <div class="ft-bot-ct">
-                <div class="ft-bot-item">
-                  <ul class="i-col-0 ft-info-ul">
-                    <li>(02586) 서울시 동대문구 난계로 250 경해빌딩 204호 (주)더오션</li>
-                    <br>
-                    <li>프로그램 및 행사 문의전화 : 070-4900-3100</li>
-                    <li>E-mail : panyellowsea2022@gmail.com</li>
-                  </ul>
-                </div>
-                <div class="ft-bot-item">
-                  <p class="copyright">Copyright(c)환황해포럼. All rights reserved.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- } Footer -->
+    <!-- } Footer -->
     
   </body>
 </html>

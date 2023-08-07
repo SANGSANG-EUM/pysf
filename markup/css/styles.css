@@ -69,7 +69,7 @@ body{background:#fff;color:#111;height:100%;overflow:overlay;}
 .wrapper > .container > .right table tbody td.btn a:hover{background-color:#111;}
 .wrapper > .container > .right table tbody td .link{color:inhert;font-weight:normal;font-size:1.3rem;}
 .wrapper > .container > .right table tbody td .comment li{position:relative;padding-left:1rem;color:#666;font-size:1.3rem;}
-.wrapper > .container > .right table tbody td .comment li strong{margin-right:1rem;color:#333;}
+.wrapper > .container > .right table tbody td .comment li strong{margin-right:1.3rem;color:#333;}
 .wrapper > .container > .right table tbody td .comment li:before{content:'-';position:absolute;top:.1px;left:0;color:#999;}
 .wrapper > .container > .right table + .title{margin:4rem 0 2rem;}
 .wrapper > .container.is-active > .left{display:block;}
