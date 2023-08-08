@@ -65,7 +65,7 @@
   .full-menu-list {padding: 15px 0;}
   .full-menu-link:not(:first-child) {margin-top: 8px;}
   .full-menu-link > a {position: relative; font-size: 18px; font-weight: 400; color: #666; padding-right: 15px;}
-  .full-menu-link > a:after {content:""; width: 14px; height: 12px; background: url('../img/icon-ytb-right.png') no-repeat center center; position: absolute; right: -15px; top: 50%; transform: translateY(-50%); opacity: 0;}
+  .full-menu-link > a:after {content:""; width: 14px; height: 12px; background: url('/pysf/images/icon-ytb-right.png') no-repeat center center; position: absolute; right: -15px; top: 50%; transform: translateY(-50%); opacity: 0;}
 
   .fullmenu.pc .full-menu-box:hover {background: var(--main-color);}
   .fullmenu.pc .full-menu-box:hover .full-menu-title {color: #ffe4c5;}
@@ -111,8 +111,9 @@
   .main {font-size: 0;}
   /* Main Visual { */
     .main-vs-wrap {border-radius: 0 0 100px 100px; overflow: hidden; position: relative;}
-    .main-vs-img img {width: 100%;}
-    .main-vs-title-box {position: absolute; z-index: 1; top: 55%; left: 50%; transform: translate(-50%,-50%); max-width: 1350px; width: 100%; max-height: 100%;}
+    .main-vs {position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden;}
+    .main-vs-img img {height: 100%; min-width: 100%; max-width: fit-content;}
+    .main-vs-title-box {position: relative; max-width: 1370px; width: 100%; margin: 0 auto; padding: 200px 0 140px; z-index: 10;}
     .main-vs-title {margin-bottom: 25px;}
     .main-vs-text {}
     .main-vs-text:first-child {padding-bottom: 4px;}
@@ -133,27 +134,27 @@
     .main-quick-item-inner > * {transition: 0.2s ease-out;}
     .main-quick-item-inner .title {font-weight: 600; font-size: 26px; color: #0f0f0f; padding-bottom: 8px;}
     .main-quick-item-inner .text {font-weight: 300; font-size: 16px; color: #666; line-height: 1.375;}
-    .main-quick-item-inner .arrow {display: inline-block; width: 40px; height: 40px; border-radius: 5px; background: url('../img/icon-quick-right.png') no-repeat center #222; margin-top: 60px; font-size: 0;}
+    .main-quick-item-inner .arrow {display: inline-block; width: 40px; height: 40px; border-radius: 5px; background: url('/pysf/images/icon-quick-right.png') no-repeat center #222; margin-top: 60px; font-size: 0;}
 
-    .main-quick-item:nth-child(1) .main-quick-item-inner {background: #fbf9f6 url('../img/icon-quick01.png') no-repeat bottom 40px right 50px;}
-    .main-quick-item:nth-child(2) .main-quick-item-inner {background: #fbf9f6 url('../img/icon-quick02.png') no-repeat bottom 40px right 50px;}
-    .main-quick-item:nth-child(3) .main-quick-item-inner {background: #fbf9f6 url('../img/icon-quick03.png') no-repeat bottom 40px right 50px;}
-    .main-quick-item:nth-child(4) .main-quick-item-inner {background: #fbf9f6 url('../img/icon-quick04.png') no-repeat bottom 40px right 50px;}
+    .main-quick-item:nth-child(1) .main-quick-item-inner {background: #fbf9f6 url('/pysf/images/icon-quick01.png') no-repeat bottom 40px right 50px;}
+    .main-quick-item:nth-child(2) .main-quick-item-inner {background: #fbf9f6 url('/pysf/images/icon-quick02.png') no-repeat bottom 40px right 50px;}
+    .main-quick-item:nth-child(3) .main-quick-item-inner {background: #fbf9f6 url('/pysf/images/icon-quick03.png') no-repeat bottom 40px right 50px;}
+    .main-quick-item:nth-child(4) .main-quick-item-inner {background: #fbf9f6 url('/pysf/images/icon-quick04.png') no-repeat bottom 40px right 50px;}
 
     .main-quick-item .main-quick-item-inner:hover {background-color: #ee830b;}
     .main-quick-item-inner:hover .title, .main-quick-item-inner:hover .text {color: #fff;}
-    .main-quick-item-inner:hover .arrow {background: url('../img/icon-quick-right-orange.png') no-repeat center #fff;}
-    .main-quick-item:nth-child(1) .main-quick-item-inner:hover {background-image: url('../img/icon-quick01-over.png');}
-    .main-quick-item:nth-child(2) .main-quick-item-inner:hover {background-image: url('../img/icon-quick02-over.png');}
-    .main-quick-item:nth-child(3) .main-quick-item-inner:hover {background-image: url('../img/icon-quick03-over.png');}
-    .main-quick-item:nth-child(4) .main-quick-item-inner:hover {background-image: url('../img/icon-quick04-over.png');}
+    .main-quick-item-inner:hover .arrow {background: url('/pysf/images/icon-quick-right-orange.png') no-repeat center #fff;}
+    .main-quick-item:nth-child(1) .main-quick-item-inner:hover {background-image: url('/pysf/images/icon-quick01-over.png');}
+    .main-quick-item:nth-child(2) .main-quick-item-inner:hover {background-image: url('/pysf/images/icon-quick02-over.png');}
+    .main-quick-item:nth-child(3) .main-quick-item-inner:hover {background-image: url('/pysf/images/icon-quick03-over.png');}
+    .main-quick-item:nth-child(4) .main-quick-item-inner:hover {background-image: url('/pysf/images/icon-quick04-over.png');}
   /* } Quick Link */
 
   /* Main Commmunity { */
-    .main-community-section {background: url('../img/main-community-bg.png') no-repeat top/contain; padding: 140px 0 120px;}
+    .main-community-section {background: url('/pysf/images/main-community-bg.png') no-repeat top/contain; padding: 140px 0 120px;}
     .main-community-ct {display: flex; align-items: center;}
     .main-community-left {width: 594px; padding-right: 95px;}
-    .online-regi-box {border-radius: 5px 5px 100px 5px; background: url('../img/online-regi-bg.png') no-repeat center/cover; padding: 51px 61px 54px;}
+    .online-regi-box {border-radius: 5px 5px 100px 5px; background: url('/pysf/images/online-regi-bg.png') no-repeat center/cover; padding: 51px 61px 54px;}
     .online-regi-box .title {font-weight: 700; font-size: 40px; color: #fff; padding-bottom: 5px;}
     .online-regi-box .text {font-weight: 300; font-size: 16px; color: #fff;}
     .online-regi-box a {display: flex; border-radius: 5px; border: 1px solid #fff; justify-content: center; align-items: center; width: 190px; height: 46px; margin-top: 87px;}
@@ -195,10 +196,12 @@
     .main-promotion-ytb {}
     .main-promotion-ytb-btn {display: flex; background-color: #222; border-radius: 5px 5px 50px 5px; color: #fff; flex-direction: column; width: 250px; text-align: right; padding-right: 43px; padding: 31.75px 43px 31.75px 0;}
     .main-promotion-ytb-btn p:first-child {font-weight: 700; font-size: 25px;}
+    .main-promotion-ytb-btn p:first-child span {vertical-align: middle;}
     .main-promotion-ytb-btn p:last-child {font-weight: 300; font-size: 16px; color: #e9e9e9; margin-top: -5px;}
+    .main-promotion-ytb-btn p img {display: inline-block; vertical-align: middle;}
 
     .main-promotion-list {padding: 23px 0 31px;}
-    .main-promotion-sl {padding-left: 7.4%;}
+    .main-promotion-sl {padding-left: calc((100% - 1600px) / 2);}
     .main-promotion-sl-item {padding: 7px;}
     .main-promotion-sl-item-inner {display: block;}
     .main-promotion-thumb {border: 2px solid transparent; border-radius: 8px; overflow: hidden; transition: 0.2s ease-out;}
@@ -226,7 +229,7 @@
 /* } Main */
 
 /* Sub { */
-  .sub_top {overflow: hidden; display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/source/img/sub_top_visual-bg.jpg') no-repeat center/cover; border-radius: 0 0 85px 85px; position: relative;}
+  .sub_top {overflow: hidden; display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/pysf/images/sub_top_visual-bg.jpg') no-repeat center/cover; border-radius: 0 0 85px 85px; position: relative;}
   .sub_top .txt_box {padding-top: 90px; text-align: center;}
   .sub_top .txt-dp1 {font-size: 20px; font-weight: 400; color: #666; line-height: 1;}
   .sub_top .txt-dp2 {margin-top: 13px; font-size: 54px; font-weight: 700; color: #0f0f0f; line-height: 1;}
@@ -254,7 +257,7 @@
 
   .common-input {height: 45px; padding: 0 18px; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 18px; font-weight: 300; color: #666;}
   .common-input.w100p {width: 100%;}
-  .common-select {height: 45px; padding: 0 18px; background: #fff url('/source/img/select-arrow02.png') no-repeat center right 18px; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 18px; font-weight: 300; color: #666; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+  .common-select {height: 45px; padding: 0 18px; background: #fff url('/pysf/images/select-arrow02.png') no-repeat center right 18px; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 18px; font-weight: 300; color: #666; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
   
   .common-radio {display: inline-block; vertical-align: middle; margin-right: 30px;}
   .common-radio:last-child {margin-right: 0;}
@@ -270,11 +273,11 @@
   .common-checkbox input[type="checkbox"] {display: none;}
   .common-checkbox label {padding-left: 38px; font-size: 18px; font-weight: 400; color: #0f0f0f; cursor: pointer;}
   .common-checkbox label::before {content:""; width: 28px; height: 28px; border: 1px solid #e6e6e6; border-radius: 5px; position: absolute; left: 0; top: 0; box-sizing: border-box;}
-  .common-checkbox label::after {content:""; width: 17px; height: 13px; background: url(/source/img/icon-check.png) no-repeat center center; position: absolute; left: 6px; top: 8.5px; box-sizing: border-box;}
+  .common-checkbox label::after {content:""; width: 17px; height: 13px; background: url('/pysf/images/icon-check.png') no-repeat center center; position: absolute; left: 6px; top: 8.5px; box-sizing: border-box;}
   .common-checkbox input:checked + label::before {border: 1px solid var(--main-color); background: var(--main-color);}
-  .common-checkbox input:checked + label::after {background: url(/source/img/icon-check-active.png) no-repeat center center;}
+  .common-checkbox input:checked + label::after {background: url('/pysf/images/icon-check-active.png') no-repeat center center;}
   
-  .common-btn {position: relative; display: inline-block; width: 170px; height: 46px; line-height: 46px; padding: 0 40px 0 20px; border-radius: 5px; border: none; background: #222 url('/source/img/icon-ytb-right.png') no-repeat center right 20px; text-align: left; font-size: 16px; font-weight: 300; color: #fff; transition: 0.2s ease-out;}
+  .common-btn {position: relative; display: inline-block; width: 170px; height: 46px; line-height: 46px; padding: 0 40px 0 20px; border-radius: 5px; border: none; background: #222 url('/pysf/images/icon-ytb-right.png') no-repeat center right 20px; text-align: left; font-size: 16px; font-weight: 300; color: #fff; transition: 0.2s ease-out;}
   .common-btn:hover {background-position: center right 15px;}
 
   /* Table { */
@@ -306,7 +309,7 @@
   .bo_search {}
   .bo_search fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
   .search_wrap {display: flex; flex-flow: row wrap; align-items: flex-start;}
-  .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/source/img/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
+  .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/pysf/images/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
   .search-select::-ms-expand {display:none}
   .search-keyword {height: 48px; padding: 0 10px; border: 0;}
   .search-submit {display: flex; justify-content: center; align-items: center; width: 48px; height: 48px; border: 0; background: none;}
@@ -326,8 +329,8 @@
   .pagination .pgn-num.act {font-weight: 500; color: var(--main-color);}
   .pagination .pgn-arrow {display: block; width: 40px; height: 40px; line-height: 40px; border-radius: 5px; font-size: 0; text-align: center; transition: 0.2s ease-out;}
   .pagination .pgn-arrow:hover {background-color: var(--main-color);}
-  .pagination .pgn-prev {background: #999 url('/source/img/prev-arrow-white.svg') no-repeat center/14px auto;}
-  .pagination .pgn-next {background: #999 url('/source/img/next-arrow-white.svg') no-repeat center/14px auto;}
+  .pagination .pgn-prev {background: #999 url('/pysf/images/prev-arrow-white.svg') no-repeat center/14px auto;}
+  .pagination .pgn-next {background: #999 url('/pysf/images/next-arrow-white.svg') no-repeat center/14px auto;}
 
   .board_v_ct {margin-top: 20px;}
 
@@ -421,7 +424,7 @@
   .map-content01 .add-text {}
   .map-content01 .add-text .title {font-weight: 500; font-size: 18px; color: #333;}
   .map-content01 .add-text .text {font-weight: 300; font-size: 18px; color: #666;}
-  .map-content01 .find-btn {display: inline-block; border: 1px solid #ddd; border-radius: 5px; background: url('/source/img/arr-right01.png') no-repeat center right 20px #fff; font-weight: 300; font-size: 16px; color: #999; width: 190px; height: 46px; line-height: 46px; padding: 0 20px;position: absolute; top: 0; right: 0;}
+  .map-content01 .find-btn {display: inline-block; border: 1px solid #ddd; border-radius: 5px; background: url('/pysf/images/arr-right01.png') no-repeat center right 20px #fff; font-weight: 300; font-size: 16px; color: #999; width: 190px; height: 46px; line-height: 46px; padding: 0 20px;position: absolute; top: 0; right: 0;}
   .map-content01 .map-box {padding-top: 15px;}
   .wrap_controllers.hide{display: none;}
   .root_daum_roughmap .border1 {display: none;}
@@ -450,7 +453,7 @@
   .program-content01 {padding-top: 37px;}
 
   .program-btn-box {display: flex; align-items: center; justify-content: center; padding-top: 20px;}
-  .download-btn {background: url('/source/img/icon-download.png') no-repeat center right 22px #333; border-radius: 5px; font-weight: 300; font-size: 16px; color: #fff; max-width: 190px; width: 100%; padding: 11px 21px;}
+  .download-btn {background: url('/pysf/images/icon-download.png') no-repeat center right 22px #333; border-radius: 5px; font-weight: 300; font-size: 16px; color: #fff; max-width: 190px; width: 100%; padding: 11px 21px;}
   .program-btn-box .download-btn {margin-right: 5px;}
   .program-btn-box .download-btn:last-child {margin-right: 0;}
 /* } 프로그램 */
@@ -562,7 +565,7 @@
 
 /* 충남 관광명소 { */
   .chungnam-link {position: relative; display: block; padding: 16px 22px; background: #dc3400; border-radius: 5px;}
-  .chungnam-link::after {content:""; position: absolute; right: 26px; top: 50%; width: 14px; height: 12px; background: url(/source/img/icon-ytb-right.png) no-repeat center center; margin-top: -6px; transition: 0.2s ease-out;}
+  .chungnam-link::after {content:""; position: absolute; right: 26px; top: 50%; width: 14px; height: 12px; background: url('/pysf/images/icon-ytb-right.png') no-repeat center center; margin-top: -6px; transition: 0.2s ease-out;}
   .chungnam-link > * {display: inline-block; vertical-align: middle;}
   .chungnam-link > img {margin-right: 12px;}
   .chungnam-link > p {font-size: 20px; font-weight: 500; color: #fff;}

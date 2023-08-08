@@ -19,6 +19,26 @@ const mainPromotionSl = () => {
     pauseOnHover: false,
     pauseOnFocus: false,
     variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   }).on('init', function (event, slick) {
 
   }).on('beforeChange', function (event, slick, currentSlide, nextSlide, prevSlide) {
@@ -48,12 +68,12 @@ const mainPromotionSl = () => {
     if(stopBtn.classList.contains('pause')){
       stopBtn.classList.remove('pause');
       $mainPromotionSl.slick('slickPlay');
-      imgTag.src = './source/img/main-promotion-pause.png';
+      imgTag.src = './pysf/images/main-promotion-pause.png';
       ctStart();
     }else{
       stopBtn.classList.add('pause');
       $mainPromotionSl.slick('slickPause');
-      imgTag.src = './source/img/main-promotion-play.png';
+      imgTag.src = './pysf/images/main-promotion-play.png';
       ctStop();
     }
   });
