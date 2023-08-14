@@ -37,6 +37,12 @@ const mainPromotionSl = () => {
         settings: {
           slidesToShow: 2,
         }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+        }
       }
     ]
   }).on('init', function (event, slick) {
