@@ -107,6 +107,17 @@
   .copyright {font-weight: 300; font-size: 16px; color: #999; line-height: 1.625;}
 /* } Footer */
 
+/* Popup { */
+  .popup-wrap {display: block; position: relative; z-index: 100;}
+  .popup-box {position:absolute; display: inline-block; vertical-align: middle; max-width: 80%;}
+  .popup-body {max-width: 100%; height: auto;}
+  .popup-body img {display: block;}
+  .popup-ctrl {background: #0f0f0f; padding: 4px 7px; overflow: hidden;}
+  .popup-button {border: none;  background: none; font-size: 16px; font-weight: 400; color: #fff; padding: 5px;}
+  .popup-today {float: left;}
+  .popup-close {float: right;}
+/* } Popup */
+
 /* Main { */
   .main {font-size: 0;}
   /* Main Visual { */
@@ -300,7 +311,6 @@
     .table-type2 td.content {padding-left: 37px; font-weight: 300; font-size: 18px; color: #666; line-height: 1.444;}
     .table-type2 td.content b {font-weight: 500; color: #333; display: block;}
     .table-type2 td.place {padding: 21px 50px; border-left: 1px solid #ddd; text-align: center;}
-
   /* } Table */
 /* } Sub */
 
@@ -600,6 +610,6 @@
   .gallery-link img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%;}
   .gallery-content .pagination {margin-top: 30px;}
 
-  #popup {width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; text-align: center; padding: 3% 10px 10px; background-color: rgba(0, 0, 0, 0.5); z-index: 10001; cursor: pointer; box-sizing: border-box; display: none;}
-  #popup img {max-width: 100%; max-height: 100%; margin: 302.461px auto 0px; box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 6px;}
+  #popup {width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; text-align: center; padding: 3% 10px 10px; background-color: rgba(0, 0, 0, 0.7); z-index: 10001; cursor: pointer; box-sizing: border-box; display: none;}
+  #popup img {position: fixed; left: 50%; top: 50%; max-width: 95%; max-height: 100%; box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 6px; transform: translate(-50%,-50%);}
 /* } 이전포럼 */

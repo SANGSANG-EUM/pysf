@@ -43,6 +43,9 @@
   .main-quick-item-inner .text br {display: none;}
 
   .main-promotion-sl {padding-left: 23px; padding-right: 23px;}
+
+  /* Sub */
+  .sub_top {border-radius: 0 0 70px 70px;}
   
   /* 초대의글 */
   .invite-left {width: 60%;}
@@ -182,9 +185,11 @@
   .main-promotion-sl {padding-left: 15px; padding-right: 15px;}
   
   /* Sub */
-  .sub_top {height: 400px; border-radius: 0 0 50px 50px;}
+  .sub_top {height: 400px; border-radius: 0 0 40px 40px;}
   .sub_top .txt_box {padding-top: 50px;}
   .sub_top .txt-dp2 {font-size: 50px;}
+  .sub_tab-ul {border-radius: 25px 25px 0 0;}
+  .sub_tab-ul li a {padding: 15px 0;}
 
   .sub_contents {position: relative; padding: 80px 0 100px;}
 
@@ -316,8 +321,9 @@
   .sub_top {height: 280px; border-radius: 0 0 30px 30px;}
   .sub_top .txt_box {padding-top: 40px;}
   .sub_top .txt-dp1 {font-size: 18px;}
-  .sub_top .txt-dp2 {font-size: 40px;}
-  .sub_tab-ul {display: none;}
+  .sub_top .txt-dp2 {font-size: 36px;}
+  .sub_tab-ul {border-radius: 15px 15px 0 0;}
+  .sub_tab-ul li a {font-size: 15px; padding: 10px 0;}
 
   .sub_contents {padding: 60px 0 70px;}
 
@@ -533,12 +539,19 @@
   .main-community-right {margin-top: 35px; padding: 35px 20px 0;}
   
   /* Sub */
-  .sub_top {height: 220px;}
-  .sub_top .txt_box {padding-top: 50px;}
+  .sub_top {display: block; height: auto; background: none; border-radius: 0;}
+  .sub_top .txt_box {padding: 120px 0 60px; background: url('/pysf/images/sub_top_visual-bg.jpg') no-repeat center/cover; border-radius: 0 0 30px 30px;}
   .sub_top .txt-dp2 {font-size: 30px; margin-top: 10px;}
 
-  .print-btn img {width: 13px;}
+  .sub_tab {position: relative; left: inherit; bottom: inherit;}
+  .sub_tab-ul {margin-top: 10px; background: none; text-align: center;}
+  .sub_tab-ul li {width: auto;}
+  .sub_tab-ul li:not(:last-child) {margin-right: 8px;}
+  .sub_tab-ul li::after {display: none; width: 100%; height: 2px; top: inherit; bottom: 0px; background: var(--main-color);}
+  .sub_tab-ul li.active::after {display: block;}
+  .sub_tab-ul li a {font-size: 15px; color: #666; padding: 0 0 3px 0;}
 
+  .print-btn img {width: 13px;}
 
   /* 초대의글 */
   .invite-right {margin-bottom: 18px;}
@@ -557,7 +570,7 @@
   .program-btn-box {display: block;}
   .download-btn {display: block; margin: 0 auto;}
   .program-btn-box .download-btn {margin: 0 auto;}
-  .program-btn-box .download-btn:last-child {margin: 5px auto 0;}
+  .program-btn-box .download-btn:not(:first-child) {margin: 5px auto 0;}
   
   /* 초청연사 */
   .speaker-content01 {padding-bottom: 30px;}
