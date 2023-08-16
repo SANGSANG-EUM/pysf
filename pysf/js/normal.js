@@ -4,6 +4,14 @@ function printPage() {
 }
 
 /**
+ * [메인] 팝업 닫기
+ */
+function popupClose(id){
+  var popupId = $("#"+id);
+  popupId.hide();
+}
+
+/**
  * [메인] 홍보영상 슬라이드
  */
 const mainPromotionSl = () => {
@@ -188,16 +196,35 @@ const popup = () => {
       $('<img>').attr({'src': src, 'id':'popup-img'})
     ).animate({opacity:'show'}, 300);
 
-    popupImg.on('load', function () {
-      let documentHeight = popupWrap.height();
-      let imgHeight = popupImg.height();
-      popupImg.css('margin-top', (documentHeight - imgHeight) / 2);
-    });			
+    // popupImg.on('load', function () {
+    //   let documentHeight = popupWrap.height();
+    //   let imgHeight = popupImg.height();
+    //   popupImg.css('margin-top', (documentHeight - imgHeight) / 2);
+    // });			
   });
 
   popupWrap.on('click', function() {
     $(this).hide();
     popupWrap.find('img').remove();
+  });
+}
+
+/**
+ * [초청연사] 탭 메뉴
+ */
+const tab = () => {
+  let tabWrap = $('.tab-section'), 
+      tabBtnWrap = $('.sub_tab_speaker');
+
+  tabWrap.hide();
+  $('.tab-section:first').show();
+
+  tabBtnWrap.find('li').click(function () {
+    tabBtnWrap.find('li').removeClass('active');
+    $(this).addClass('active');
+    tabWrap.hide()
+    let activeTab = $(this).attr('data-tab');
+    $('#' + activeTab).fadeIn();
   });
 }
 
@@ -209,4 +236,5 @@ $(document).ready(function(){
   mobileMenu(); // [곧통] 모바일메뉴
   // mainPromotionSl(); // [메인] 홍보영상 슬라이드
   popup();      // [이전포럼] 행사갤러리 팝업
+  tab();        // [초청연사] 탭 메뉴
 });
