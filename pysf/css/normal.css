@@ -122,7 +122,7 @@
   .main {font-size: 0;}
   /* Main Visual { */
     .main-vs-wrap {border-radius: 0 0 100px 100px; overflow: hidden; position: relative;}
-    .main-vs {position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden;}
+    .main-vs {position: absolute; min-width: 100%; z-index: 1; top: 50%; left: 50%; transform: translate(-50%,-50%); overflow: hidden;}
     .main-vs-img img {height: 100%; min-width: 100%; max-width: fit-content;}
     .main-vs-title-box {position: relative; max-width: 1370px; width: 100%; margin: 0 auto; padding: 200px 0 140px; z-index: 10;}
     .main-vs-title {margin-bottom: 25px;}
@@ -162,7 +162,7 @@
   /* } Quick Link */
 
   /* Main Commmunity { */
-    .main-community-section {background: url('/pysf/images/main-community-bg.png') no-repeat top/contain; padding: 140px 0 120px;}
+    .main-community-section {background: url('/pysf/images/main-community-bg.png') no-repeat top/100%; padding: 140px 0 120px;}
     .main-community-ct {display: flex; align-items: center;}
     .main-community-left {width: 594px; padding-right: 95px;}
     .online-regi-box {border-radius: 5px 5px 100px 5px; background: url('/pysf/images/online-regi-bg.png') no-repeat center/cover; padding: 51px 61px 54px;}
