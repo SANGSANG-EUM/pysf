@@ -8,7 +8,7 @@ function printPage() {
  */
 function popupClose(id){
   var popupId = $("#"+id);
-  popupId.hide();
+  popupId.fadeOut();
 }
 
 /**
@@ -82,12 +82,12 @@ const mainPromotionSl = () => {
     if(stopBtn.classList.contains('pause')){
       stopBtn.classList.remove('pause');
       $mainPromotionSl.slick('slickPlay');
-      imgTag.src = './pysf/images/main-promotion-pause.png';
+      imgTag.src = '/pysf/images/main-promotion-pause.png';
       ctStart();
     }else{
       stopBtn.classList.add('pause');
       $mainPromotionSl.slick('slickPause');
-      imgTag.src = './pysf/images/main-promotion-play.png';
+      imgTag.src = '/pysf/images/main-promotion-play.png';
       ctStop();
     }
   });
