@@ -2,6 +2,9 @@
   /* common */
   .wrapper {width: 100%; padding-left: 50px; padding-right: 50px;}
 
+  /* Header */
+  .eng .gnb-ul > li {padding: 0 23px;}
+
   /* Main */
   .main-community-left {width: 35%; padding-right: 55px;}
   .online-regi-box {padding: 45px 50px 50px;}
@@ -11,6 +14,7 @@
   .main-community-title-box {padding-bottom: 35px;}
 
   .main-promotion-section::before {width: 100%;}
+  .main-promotion-title {padding-right: 20px;}
   .main-promotion-sl {padding-left: 43px; padding-right: 43px;}
   
   /* 포럼소개 */
@@ -33,6 +37,8 @@
   .full-menu-box-half {padding: 0;}
   .full-menu-box-half .full-menu-title {padding: 30px 30px 35px;}
   .full-menu-list {padding: 10px 0;}
+  
+  .eng .gnb-ul > li {padding: 0 15px;}
 
   /* Main */
   .main-vs-title-box {padding: 16% 50px 10%;}
@@ -98,7 +104,7 @@
   .main-community-item-inner {padding: 25px; border-radius: 5px 5px 30px 5px;}
 
   .main-promotion-section::before {top: 40px;}
-  .main-promotion-title .title {font-size: 42px;}
+  .main-promotion-title .title {font-size: 42px; line-height: 1.2;}
   .main-promotion-ytb-btn {width: 220px; padding: 20px 30px 20px 0; border-radius: 5px 5px 30px 5px;}
   .main-promotion-list {padding: 15px 0 30px;}
   .main-promotion-sl {padding-left: 25px; padding-right: 25px;}
@@ -121,7 +127,7 @@
 
   /* 포럼소개 */
   .intro-left {width: 60%;}
-  .intro-right {width: 40%; padding-left: 70px;}
+  .intro-right {width: 40%; padding-left: 50px;}
   .intro-content01 .text-box {font-size: 20px;}
   .intro-content01-ul li .left {font-size: 16px;}
   .intro-content01-ul li .right {font-size: 16px;}
@@ -192,6 +198,9 @@
   .sub_tab-ul li a {padding: 15px 0;}
 
   .sub_contents {position: relative; padding: 80px 0 100px;}
+
+  /* 포럼소개 */
+  .intro-right {padding-left: 30px;}
 
   /* 초대의글 */
   .invite-right {padding-left: 30px;}
@@ -291,8 +300,10 @@
 
   .main-community-right {margin-top: 50px; padding: 50px 20px 0;}
   .main-community-title-box .title {font-size: 32px;}
-  .main-community-title-box .btn-box a {width: 150px; height: 42px;}
+  .main-community-title-box .btn-box a {width: auto; max-width: 150px; height: 42px; padding: 0 10px;}
   .main-community-title-box .btn-box a span {font-size: 14px;}
+  .main-community-title-box .btn-box a span img {display: block;}
+  .main-community-title-box .btn-box a span:last-child {padding-left: 8px;}
   .main-community-item {width: 100%;}
   .main-community-item-inner {padding: 15px;}
   .main-community-item-inner .sort {font-size: 13px; margin-bottom: 10px;}
@@ -338,16 +349,16 @@
   .table-type2, .table-type2 table, .table-type2 tbody, .table-type2 tr, .table-type2 td {display: block;}
   .table-type2 thead {display: none;}
   .table-type2 tbody tr {padding: 12px 0;}
-  .table-type2 td {position: relative; padding: 2px 15px 2px 45px; font-size: 15px;}
-  .table-type2 td::before {content: attr(data-th); position: absolute; left: 10px; top: 2px; padding-right: 5px; font-weight: 400; color: var(--main-color);}
+  .table-type2 td {position: relative; padding: 2px 10px; font-size: 15px;}
+  .table-type2 td::before {content: attr(data-th); position: relative; float: left; padding-right: 5px; font-weight: 400; color: var(--main-color);}
   .table-type2 td.time {text-align: left; border-right: none; font-size: 15px;}
-  .table-type2 td.content {padding-left: 45px; font-size: 15px;}
-  .table-type2 td.place {min-height: 28px; padding: 2px 15px 2px 45px; text-align: left; border-left: none;}
+  .table-type2 td.content {padding-left: 10px; font-size: 15px;}
+  .table-type2 td.place {min-height: 28px; padding: 2px 10px; text-align: left; border-left: none;}
 
   .print-btn {position: absolute; top: 10px; right: 20px; font-size: 12px;}
   .print-btn img {width: 14px; margin: 0 3px 0 0; vertical-align: bottom;}
 
-  .download-btn {font-size: 15px; max-width: 170px;}
+  .download-btn {padding: 11px; max-width: 170px; font-size: 14px; background-position: center right 11px;}
 
   .pagination {gap: 0 4px ;}
   .pagination .pgn-arrow {width: 30px; height: 30px; line-height: 30px; background-size: 12px auto !important;}
@@ -443,7 +454,7 @@
   .registration-program-inform .text01 span {font-size: 17px; padding: 0 15px;}
   .registration-program-inform .text02 {font-size: 16px;}
   .registration-program-checkbox label {font-size: 0;}
-  .registration-program-table th.check, .registration-program-table td.check {text-align: left; border-right: none; padding-left: 75px;}
+  .registration-program-table th.check, .registration-program-table td.check {text-align: left; border-right: none; padding-left: 10px;}
 
   .registration-agree-box textarea {height: 150px; font-size: 15px; padding: 15px;}
 
@@ -559,7 +570,7 @@
   /* 오시는 길 */
   .root_daum_roughmap_landing, .root_daum_roughmap .wrap_map {height: 250px !important;}
   .map-content02-ul li {padding-bottom: 8px;}
-  .map-content02-ul li .title {display: block;}
+  .map-content02-ul li .title {display: block; width: 100%;}
   .map-content02-ul li .text {display: block; width: 100%; padding-left: 0; line-height: 1.4;}
 
   /* 프로그램 */

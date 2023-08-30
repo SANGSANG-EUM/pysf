@@ -22,109 +22,128 @@
         </h1>
 
         <div class="container is-active">
-            <div class="left">
+            <!-- <div class="left">
                 <h2>DevLog</h2>
                 <ul class="logList">
-                    <!-- <li class="date">2023-07-31</li>
+                    <li class="date">2023-07-31</li>
                     <li><strong>전체</strong><em>head 및 메뉴명 수정</em></li>
                     <li class="date">2023-08-01</li>
-                    <li><strong>전체</strong><em>헤더, 푸터 내용 수정</em></li> -->
+                    <li><strong>전체</strong><em>헤더, 푸터 내용 수정</em></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="right">
                 <h2 class="title">사용자 페이지</h2>
                 <!-- tr 클래스 값 - 빈 값:진행중, fin:완료, del:삭제 -->
                 <table>
                     <colgroup>
                         <col style="width:18%">
+                        <col style="width:6%">
                         <col style="width:13%">
                         <col style="width:6%">
-                        <col style="width:10%">
-                        <col style="width:70px">
-                        <col style="width:70px">
-                        <col style="width:80px">
+                        <col style="width:5%">
+                        <col style="width:5%">
+                        <col style="width:5%">
+                        <col style="width:6%">
+                        <col style="width:6%">
                         <col style="width:*">
                     </colgroup>
                     <thead>
                         <tr>
                             <th>MENU</th>
+                            <th>페이지타입</th>
                             <th>URL</th>
                             <th>VIEW</th>
-                            <th>페이지타입</th>
                             <th>작업(PC)</th>
                             <th>작업(MO)</th>
                             <th>완료여부</th>
+                            <th>번역 <br/>VIEW</th>
+                            <th>번역 <br/>완료여부</th>
                             <th>COMMENT</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="">
                             <td>메인</td>
+                            <td class="t_center">메인</td>
                             <td><p class="target"><span class='link'>index.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../index.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">메인</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">자료대기</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../index_en.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td>
                                 <ul class="comment">
                                     <li>업체 자료 회신 시 유튜브 채널 추가 필요</li>
-                                    <li>개발 완료 시 페이지 링크 추가 필요</li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr class="fin">
+                        <tr class="">
                             <td>행사소개 > 포럼소개</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/intro.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/intro.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/intro.html" target="_blank">View</a>
+                            </td>
+                            <td class="t_center">자료대기</td>
                             <td></td>
                         </tr>
                         <tr class="">
                             <td>행사소개 > 초대의 글</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/invite.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/invite.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
-                            <td>
-                                <ul class="comment">
-                                    <li>업체 자료 회신 시 내용 업데이트 필요</li>
-                                </ul>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/invite.html" target="_blank">View</a>
                             </td>
+                            <td class="t_center">자료대기</td>
+                            <td></td>
                         </tr>
                         <tr class="fin">
                             <td>행사소개 > 오시는 길</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/map.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/map.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/map.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="">
                             <td>프로그램 > 프로그램</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/program.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/program.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
-                            <td class="t_center">O</td>
+                            <td class="t_center">자료대기</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/program.html" target="_blank">View</a>
+                            </td>
+                            <td class="t_center">자료대기</td>
                             <td>
                                 <ul class="comment">
                                     <li>업체 자료 회신 시 파일 업데이트 필요</li>
@@ -133,217 +152,287 @@
                         </tr>
                         <tr class="">
                             <td>초청연사 > 초청연사</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/speaker01.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/speaker01.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
-                            <td class="t_center">O</td>
+                            <td class="t_center">자료대기</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/speaker01.html" target="_blank">View</a>
+                            </td>
+                            <td class="t_center">자료대기</td>
                             <td>
                                 <ul class="comment">
                                     <li>업체 자료 회신 시 내용 업데이트 필요</li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr class="fin">
+                        <tr class="">
                             <td>참가자안내 > 등록신청</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/registration.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/registration.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/registration.html" target="_blank">View</a>
+                            </td>
+                            <td class="t_center">자료대기</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>참가자안내 > 신청확인</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/check.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/check.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/check.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>참가자안내 > 신청확인 > 상세</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/check_view.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/check_view.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/check_view.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>참가자안내 > 충남 관광명소</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/chungnam.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/chungnam.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/chungnam.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제8회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_8.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_8.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_8.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제7회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_7.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_7.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_7.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제6회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_6.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_6.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_6.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제5회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_5.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_5.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_5.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제4회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_4.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_4.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_4.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제3회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_3.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_3.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_3.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제2회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_2.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_2.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_2.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 이전포럼 > 제1회 환황해포럼</td>
+                            <td class="t_center">콘텐츠</td>
                             <td><p class="target"><span class='link'>/sub/forum_1.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/forum_1.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">콘텐츠</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/forum_1.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 영상자료 > 목록</td>
+                            <td class="t_center">게시판</td>
                             <td><p class="target"><span class='link'>/sub/video_list.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/video_list.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">게시판</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/video_list.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>자료실 > 영상자료 > 상세</td>
+                            <td class="t_center">게시판</td>
                             <td><p class="target"><span class='link'>/sub/video_view.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/video_view.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">게시판</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/video_view.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>공지사항 > 공지사항 > 목록</td>
+                            <td class="t_center">게시판</td>
                             <td><p class="target"><span class='link'>/sub/board_list.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/board_list.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">게시판</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/board_list.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>공지사항 > 공지사항 > 상세</td>
+                            <td class="t_center">게시판</td>
                             <td><p class="target"><span class='link'>/sub/board_view.html</span></p></td>
                             <td class="btn">
                                 <a class="btnPc" href="../sub/board_view.html" target="_blank">View</a>
                             </td>
-                            <td class="t_center">게시판</td>
                             <td class="t_center">O</td>
                             <td class="t_center">O</td>
+                            <td class="t_center">O</td>
+                            <td class="btn">
+                                <a class="btnPc" href="../sub_en/board_view.html" target="_blank">View</a>
+                            </td>
                             <td class="t_center">O</td>
                             <td></td>
                         </tr>
                         <tr class="fin">
                             <td>공지사항 > 보도자료</td>
+                            <td class="t_center">게시판</td>
                             <td><p class="target">-</p></td>
                             <td class="btn">-</td>
-                            <td class="t_center">게시판</td>
+                            <td class="t_center">-</td>
+                            <td class="t_center">-</td>
                             <td class="t_center">-</td>
                             <td class="t_center">-</td>
                             <td class="t_center">-</td>
