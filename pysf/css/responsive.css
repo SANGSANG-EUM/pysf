@@ -149,7 +149,6 @@
   /* 이전포럼 */
   .forum-table col:first-child {width: 15% !important;}
 
-
 } /*@media End*/
 
 @media screen and (max-width:1023px){
@@ -238,6 +237,11 @@
   /* 영상자료 */
   .bo_type-video .board_ct-vid .vid-list {width: 33.3333%;}
   .bo_type-video .board_ct-vid .vid-subj {margin: 13px 0 7px;}
+  
+  /* 영문 - 메인 */
+  .eng .main-quick-section {padding: 80px 0;}
+  .eng .main-community-section {padding: 0 0 80px;}
+  .eng .main-community-section .wrapper {padding-left: 20px; padding-right: 20px;}
 
 } /*@media End*/
 
@@ -521,6 +525,10 @@
   .bo_type-text .board_ct-tb thead tr th.th_date {width: auto;}
   .bo_type-text .board_ct-tb thead tr th.th_hit, 
   .bo_type-text .board_ct-tb tbody tr td.td_hit {display: none;}
+  
+  /* 영문 - 메인 */
+  .eng .main-quick-section {padding: 50px 0;}
+  .eng .main-community-section {padding: 0 0 50px;}
 
 } /*@media End*/
 
@@ -643,5 +651,9 @@
   .bo_type-text .board_ct-tb tbody tr:last-child {border-bottom: none;}
   .bo_type-text .board_ct-tb tbody tr td {display: block; padding: 0; border-top: none; text-align: left;}
   .bo_type-text .board_ct-tb tbody tr td.td_num {display: none;}
+  
+  /* 영문 - 메인 */
+  .eng .main-quick-section {padding: 35px 0;}
+  .eng .main-community-section {padding: 0 0 40px;}
 
 } /*@media End*/

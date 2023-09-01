@@ -613,3 +613,10 @@
   #popup {width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; text-align: center; padding: 3% 10px 10px; background-color: rgba(0, 0, 0, 0.7); z-index: 10001; cursor: pointer; box-sizing: border-box; display: none;}
   #popup img {position: fixed; left: 50%; top: 50%; max-width: 95%; max-height: 100%; box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 6px; transform: translate(-50%,-50%);}
 /* } 이전포럼 */
+
+/* 영문 - 메인 { */
+  .eng .main-quick-section {padding: 100px 0;}
+  .eng .main-community-section {padding-top: 0; padding-bottom: 90px; background: none;}
+  .eng .main-community-left {width: 100%; padding: 0;}
+  .eng .main-community-right {display: none;}
+/* } 영문 - 메인 */
